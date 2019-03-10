@@ -67,7 +67,7 @@ h1 span {
 /*Banner Image Formatting*/
 
 .banner-container img {
-  padding: 32px 24px;
+  margin: 32px 24px;
   width: 60%;
   height: 60%;
 }
@@ -95,7 +95,8 @@ h1 span {
 .button {
   background-color: rgb(82,82,82);
   color: white;
-  width: 60%;
+  width: 90%;
+  margin-top: 32px;
 }
 
 .button h3 {
@@ -103,6 +104,59 @@ h1 span {
   padding-top: 8px;
   padding-bottom: 8px;
   font-weight: normal;
+}
+
+/*Information Box Formatting*/
+.information-container img {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 32px 24px;
+}
+
+.practice-box {
+  margin: 24px;
+  padding-right: 100px;
+}
+
+.practice-box h1 {
+  font-weight: bold;
+}
+
+/*Info Box Formatting*/
+
+.info-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  width: 40%;
+}
+
+.info-boxes img {
+  display: inline-block;
+  flex-direction: column;
+  align-items: right;
+  width: 35%;
+  margin-left: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.orientation-box {
+  border: solid grey 1px;
+}
+
+.orientation-box span {
+  display: inline-block;
+  width: 65%;
+}
+
+.our-campus-box {
+  border: solid grey 1px;
+}
+
+.guest-lecture-box {
+  border: solid grey 1px;
 }
 
 /*Fonts*/
