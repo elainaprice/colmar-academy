@@ -107,16 +107,22 @@ h1 span {
 }
 
 /*Information Box Formatting*/
-.information-container img {
+
+.information-banner {
   display: flex;
-  flex-direction: column;
-  width: 60%;
-  margin: 32px 24px;
+}
+
+.information-container {
+    width: 60%;
+    padding: 32px 24px;
+}
+
+.main-image img {
+  width: 100%;
 }
 
 .practice-box {
-  margin: 24px;
-  padding-right: 100px;
+  margin-left: 24px;
 }
 
 .practice-box h1 {
@@ -128,35 +134,53 @@ h1 span {
 .info-boxes {
   display: flex;
   flex-direction: column;
-  align-items: right;
   width: 40%;
 }
 
-.info-boxes img {
-  display: inline-block;
-  flex-direction: column;
-  align-items: right;
+.category {
+  display: inline-flex;
+  border: 1px solid dimgrey;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Guest Lecture Box Formatting*/
+
+.category-2 {
+  display: inline-flex;
+  border: 1px solid dimgrey;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
+}
+
+.orientation-image {
   width: 35%;
-  margin-left: 16px;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  height: auto;
+  padding: 32px 16px 16px 16px;
 }
 
-.orientation-box {
-  border: solid grey 1px;
+.orientation-image img {
+  width: 100%;
 }
 
-.orientation-box span {
+.category-image {
+  width: 35%;
+  height: auto;
+  padding: 16px 16px;
+}
+
+.category-image img {
+  width: 100%;
+}
+
+.category-text {
   display: inline-block;
-  width: 65%;
+  width: 65%
 }
 
-.our-campus-box {
-  border: solid grey 1px;
-}
-
-.guest-lecture-box {
-  border: solid grey 1px;
+.category-text a {
+  text-decoration: none;
 }
 
 /*Fonts*/
