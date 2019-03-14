@@ -121,10 +121,6 @@ h1 span {
   width: 100%;
 }
 
-.practice-box {
-  margin-left: 24px;
-}
-
 .practice-box h1 {
   font-weight: bold;
 }
@@ -182,6 +178,90 @@ h1 span {
 .category-text a {
   text-decoration: none;
 }
+
+/*Start Learning Box Formatting*/
+
+.learning-container {
+  background-color: lightgrey;
+}
+
+.learning-title {
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+}
+
+.learning-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 72px;
+  padding-left: 72px;
+  padding-bottom: 32px;
+}
+
+.learning-content-box {
+  padding-bottom: 32px;
+  background-color: white;
+  width: 30%;
+  margin: 16px 16px;
+}
+
+.course-img img {
+  width: 100%;
+  height: auto;
+}
+
+.course-text h2 {
+  padding-top: 16px;
+}
+
+.course-text h3 {
+  text-transform: uppercase;
+  padding: 8px 0;
+  color: dimgrey;
+}
+
+.course-text h4 {
+  margin-bottom: 24px;
+  color: dimgrey;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Thesis Container*/
+.thesis-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Thesis Title*/
+
+.thesis-title h1 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/*Video Container Formatting*/
+.video-container {
+  width: 60%;
+}
+
+.main-video {
+  background-color: lightgrey;
+  margin: 0px 24px 24px 24px;
+}
+
+.video-text {
+margin-left: 24px;
+}
+
+.video-text h1 {
+  margin-bottom: 8px;
+}
+
 
 /*Fonts*/
 
