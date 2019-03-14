@@ -228,19 +228,16 @@ h1 span {
   flex-wrap: wrap;
 }
 
-/*Thesis Container*/
-.thesis-container {
-  display: flex;
-  flex-direction: column;
-}
-
 /*Thesis Title*/
-
-.thesis-title h1 {
+.thesis-title {
+  display: flex;
   margin-top: 32px;
   margin-bottom: 32px;
-  align-items: center;
   justify-content: center;
+}
+
+/*Thesis Container*/
+.thesis-container {
   display: flex;
 }
 
@@ -260,6 +257,16 @@ margin-left: 24px;
 
 .video-text h1 {
   margin-bottom: 8px;
+}
+
+/*Left Box Formatting*/
+.left-boxes {
+  display: flex;
+  flex-direction: column;
+}
+
+.side-box {
+  display: flex;
 }
 
 
