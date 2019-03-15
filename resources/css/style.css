@@ -4,13 +4,14 @@ html {
   font-family: 'Quattrocento Sans';
 }
 
-
 /*Header Formatting*/
 
 header {
   display: flex;
   justify-content: space-between;
   height: 64px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 /*Logo flex-box Formatting*/
@@ -39,22 +40,24 @@ h1 span {
 .navigation {
   display: flex;
   color: black;
-  justify-content: space-between;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 10px;
+  align-items: center;
+  font-size: 18px;
+  margin-top: 23px;
+  margin-bottom: 23px;
 }
 
 .navigation span {
   display: flex;
   justify-content: space-between;
-  padding: 8px;
+  align-items: center;
+  padding-left: 16px;
   align-items: center;
 }
 
 .navigation a {
   color: black;
   text-decoration: none;
+  align-items: center;
 }
 
 /*Banner Section Formatting*/
@@ -75,9 +78,9 @@ h1 span {
 /*Text Container Formatting*/
 
 .text-container {
-  padding-top: 200px;
-  margin-left: 24px;
-  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .banner-text {
@@ -119,10 +122,12 @@ h1 span {
 
 .main-image img {
   width: 100%;
+  margin-bottom: 32px;
 }
 
 .practice-box h1 {
   font-weight: bold;
+  margin-bottom: 24px;
 }
 
 /*Info Box Formatting*/
@@ -135,7 +140,7 @@ h1 span {
 
 .category {
   display: inline-flex;
-  border: 1px solid dimgrey;
+  border: 1px solid lightgrey;
   justify-content: center;
   align-items: center;
 }
@@ -144,7 +149,7 @@ h1 span {
 
 .category-2 {
   display: inline-flex;
-  border: 1px solid dimgrey;
+  border: 1px solid lightgrey;
   justify-content: center;
   align-items: center;
   background-color: lightgrey;
@@ -172,10 +177,15 @@ h1 span {
 
 .category-text {
   display: inline-block;
-  width: 65%
+  width: 65%;
+}
+
+.category-text h2 {
+  margin-bottom: 8px;
 }
 
 .category-text a {
+  margin-top: 8px;
   text-decoration: none;
 }
 
@@ -213,12 +223,15 @@ h1 span {
 
 .course-text h2 {
   padding-top: 16px;
+  padding-left: 16px;
 }
 
 .course-text h3 {
   text-transform: uppercase;
-  padding: 8px 0;
+  margin: 8px 0;
   color: dimgrey;
+  padding-left: 16px;
+  font-size: 18px;
 }
 
 .course-text h4 {
@@ -226,6 +239,9 @@ h1 span {
   color: dimgrey;
   display: flex;
   flex-wrap: wrap;
+  margin-left: 16px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 /*Thesis Title*/
@@ -260,15 +276,39 @@ margin-left: 24px;
 }
 
 /*Left Box Formatting*/
-.left-boxes {
+.right-boxes {
   display: flex;
   flex-direction: column;
+  width: 40%;
 }
 
-.side-box {
+.side-box-1 {
+  display: flex;
+  background-color: lightgrey;
+}
+
+.side-box-2 {
   display: flex;
 }
 
+.side-box-image {
+  display: inline-flex;
+  width: 35%;
+  margin: 16px;
+}
+
+.side-box-image img {
+  display: inline-flex;
+  width: 100%;
+  height: 100%; /*In order for the image to appear square I adjusted the height to 100%*/
+}
+
+.side-box-text {
+  display: inline-flex;
+  flex-direction: column;
+  width: 65%;
+  justify-content: center;
+}
 
 /*Fonts*/
 
