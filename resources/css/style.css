@@ -5,7 +5,6 @@ html {
 }
 
 /*Header Formatting*/
-
 header {
   display: flex;
   justify-content: space-between;
@@ -14,15 +13,13 @@ header {
   margin-right: 24px;
 }
 
-/*Logo flex-box Formatting*/
-
+/*Header Logo flex-box Formatting*/
 .logo {
   display: inline-flex;
   align-items: center;
 }
 
-/*Logo Text Formatting*/
-
+/*Academy Span Formatting*/
 .logo h1 {
   font-weight: lighter;
   color: grey;
@@ -30,13 +27,13 @@ header {
   font-size: 2rem;
 }
 
+/*Colmar Span Formatting*/
 h1 span {
   color: black;
   font-weight: bold;
 }
 
 /*Navigation Menu Formatting*/
-
 .navigation {
   display: flex;
   color: black;
@@ -46,6 +43,7 @@ h1 span {
   margin-bottom: 23px;
 }
 
+/*Navigation Item Formatting*/
 .navigation span {
   display: flex;
   justify-content: space-between;
@@ -54,6 +52,7 @@ h1 span {
   align-items: center;
 }
 
+/*Anchor Formatting*/
 .navigation a {
   color: black;
   text-decoration: none;
@@ -61,14 +60,12 @@ h1 span {
 }
 
 /*Banner Section Formatting*/
-
 .banner-container {
   display: flex;
   background-color: lightgrey;
 }
 
 /*Banner Image Formatting*/
-
 .banner-container img {
   margin: 32px 24px;
   width: 60%;
@@ -76,20 +73,19 @@ h1 span {
 }
 
 /*Text Container Formatting*/
-
 .text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+/*Banner Text Formatting*/
 .banner-text {
   color: rgb(82,82,82);
   font-weight: bold;
 }
 
-/*Banner Text Formatting*/
-
+/*Banner Text Heading Formatting*/
 .banner-text h1 {
   font-size: 50px;
 }
@@ -102,6 +98,7 @@ h1 span {
   margin-top: 32px;
 }
 
+/*Button Text Formatting*/
 .button h3 {
   text-align: center;
   padding-top: 8px;
@@ -109,35 +106,37 @@ h1 span {
   font-weight: normal;
 }
 
-/*Information Box Formatting*/
-
+/*Information Container Formatting*/
 .information-banner {
   display: flex;
 }
 
+/*Inforamtion Left Side Container Formatting*/
 .information-container {
     width: 60%;
-    padding: 32px 24px;
+    margin: 32px 24px;
 }
 
+/*Information Large Image Formatting*/
 .main-image img {
   width: 100%;
   margin-bottom: 32px;
 }
 
+/*Information Header Text Formatting*/
 .practice-box h1 {
   font-weight: bold;
   margin-bottom: 24px;
 }
 
 /*Info Box Formatting*/
-
 .info-boxes {
   display: flex;
   flex-direction: column;
   width: 40%;
 }
 
+/*Orientation and Campus Box Formatting*/
 .category {
   display: inline-flex;
   border: 1px solid lightgrey;
@@ -146,7 +145,6 @@ h1 span {
 }
 
 /*Guest Lecture Box Formatting*/
-
 .category-2 {
   display: inline-flex;
   border: 1px solid lightgrey;
@@ -155,52 +153,60 @@ h1 span {
   background-color: lightgrey;
 }
 
+/*Orientation Image Container Formatting*/
 .orientation-image {
   width: 35%;
   height: auto;
   padding: 32px 16px 16px 16px;
 }
 
+/*Orientation Image Formatting*/
 .orientation-image img {
   width: 100%;
 }
 
+/*Category Image Container Formatting*/
 .category-image {
   width: 35%;
   height: auto;
   padding: 16px 16px;
 }
 
+/*Category Image Formatting*/
 .category-image img {
   width: 100%;
 }
 
+/*Category Text Container Formatting*/
 .category-text {
   display: inline-block;
   width: 65%;
 }
 
+/*Category Text Formatting*/
 .category-text h2 {
   margin-bottom: 8px;
 }
 
+/*Category Text Anchor Formatting*/
 .category-text a {
   margin-top: 8px;
   text-decoration: none;
 }
 
-/*Start Learning Box Formatting*/
-
+/*Start Learning Container Formatting*/
 .learning-container {
   background-color: lightgrey;
 }
 
+/*Start Learning Title Formatting*/
 .learning-title {
   display: flex;
   justify-content: center;
-  padding-top: 32px;
+  margin-top: 32px;
 }
 
+/*Learning Content Container Formatting*/
 .learning-content {
   display: flex;
   flex-wrap: wrap;
@@ -209,6 +215,7 @@ h1 span {
   padding-bottom: 32px;
 }
 
+/*Learning Content Boxes Formatting*/
 .learning-content-box {
   padding-bottom: 32px;
   background-color: white;
@@ -216,16 +223,19 @@ h1 span {
   margin: 16px 16px;
 }
 
+/*Course Image Formatting*/
 .course-img img {
   width: 100%;
   height: auto;
 }
 
+/*Course Text H2 Formatting*/
 .course-text h2 {
   padding-top: 16px;
   padding-left: 16px;
 }
 
+/*Course Text H3 Formatting*/
 .course-text h3 {
   text-transform: uppercase;
   margin: 8px 0;
@@ -233,18 +243,18 @@ h1 span {
   padding-left: 16px;
   font-size: 18px;
 }
-
+/*Course Text H3 Formatting*/
 .course-text h4 {
   margin-bottom: 24px;
   color: dimgrey;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 16px;
+  padding-left: 16px;
   font-size: 18px;
   font-weight: normal;
 }
 
-/*Thesis Title*/
+/*Thesis Title Formatting*/
 .thesis-title {
   display: flex;
   margin-top: 32px;
@@ -260,58 +270,84 @@ h1 span {
 /*Video Container Formatting*/
 .video-container {
   width: 60%;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 32px;
 }
 
-.main-video {
-  background-color: lightgrey;
-  margin: 0px 24px 24px 24px;
+/*Video Formatting*/
+.main-video video {
+  margin-bottom: 24px;
+  width: 100%;
 }
 
-.video-text {
-margin-left: 24px;
-}
-
+/*Video Text Formatting*/
 .video-text h1 {
   margin-bottom: 8px;
 }
 
-/*Left Box Formatting*/
+/*Right Side Box Container Formatting*/
 .right-boxes {
   display: flex;
   flex-direction: column;
   width: 40%;
 }
 
+/*Fisma Box Formatting*/
 .side-box-1 {
   display: flex;
   background-color: lightgrey;
 }
 
+/*Now and Then Box Formatting*/
 .side-box-2 {
   display: flex;
 }
 
+/*Fisma and Now and Then Image Container Formatting*/
 .side-box-image {
   display: inline-flex;
   width: 35%;
-  margin: 16px;
+  padding: 16px;
 }
 
+/*Fisma and Now and Then Image Formatting*/
 .side-box-image img {
   display: inline-flex;
   width: 100%;
   height: 100%; /*In order for the image to appear square I adjusted the height to 100%*/
 }
 
+/*Fisma and Now and Then Text Container Formatting*/
 .side-box-text {
   display: inline-flex;
   flex-direction: column;
   width: 65%;
   justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-/*Fonts*/
+.side-box-text h3 {
+  font-weight: normal;
+  font-size: 18px;
+  width: 100%;
+  color: dimgrey;
+}
 
+/*Footer Formatting*/
+.footer {
+  border-top: 1px solid lightgrey;
+  margin-left: 24px;
+}
+
+/*Footer Text Formatting*/
+.footer h4 {
+  font-weight: normal;
+}
+
+
+/*Fonts*/
 @font-face {
   font-family: 'Quattrocento Sans';
   font-style: italic;
