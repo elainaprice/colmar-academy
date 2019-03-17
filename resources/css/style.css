@@ -128,16 +128,16 @@ h1 span {
 
 .button {
   background-color: rgb(82,82,82);
-  color: white;
   width: 90%;
   margin-top: 32px;
 }
 
-.button h3 {
+.button p {
   text-align: center;
   padding-top: 8px;
   padding-bottom: 8px;
   font-weight: normal;
+  color: white;
 }
 
 /*Mobile Banner*/
