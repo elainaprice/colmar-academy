@@ -46,7 +46,6 @@ h1 span {
 /*Desktop Navigation Menu Formatting*/
 .navigation {
   display: flex;
-  color: black;
   align-items: center;
   font-size: 18px;
   margin-top: 23px;
@@ -74,70 +73,86 @@ h1 span {
   header .mobile {
     display: block;
     width: 100%;
+    height: 64px;
+    justify-content: center;
   }
 
   header .logo {
     display: none;
   }
 
-  header .mobile nav {
+  header .mobile ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-  }
-
-  header .mobile span {
-    padding: 0;
-  }
-
-  header {
-    height: 64px;
-    display: flex;
-    align-items: center;
+    list-style-type: none;
   }
 
 }
 
 /*Desktop Banner Section Formatting*/
-.banner-container {
+.banner {
   display: flex;
   background-color: lightgrey;
 }
 
-.banner-container img {
-  margin: 32px 24px;
+.banner-container {
+  display: flex;
   width: 60%;
-  height: 60%;
+}
+
+.banner-image {
+  padding: 32px 24px;
+  display: flex;
+}
+
+.banner-container img {
+  height: 100%;
+  width: 100%;
 }
 
 .text-container {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
+  width: 30%;
 }
 
 .banner-text {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   color: rgb(82,82,82);
   font-weight: bold;
 }
 
 .banner-text h1 {
   font-size: 50px;
+  font-weight: bold;
 }
 
 .button {
   background-color: rgb(82,82,82);
-  width: 90%;
+  width: 100%;
   margin-top: 32px;
+  display: flex;
+  justify-content: center;
 }
 
-.button p {
+.button span {
   text-align: center;
   padding-top: 8px;
   padding-bottom: 8px;
   font-weight: normal;
+  display: flex;
+  justify-content: center;
+}
+
+.button a {
   color: white;
+  text-decoration: none;
 }
 
 /*Mobile Banner*/
@@ -147,18 +162,21 @@ h1 span {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 30rem;
+    height: 40rem;
   }
 
   .banner-container {
     width: 100%;
-    height: 18rem;
+    height: 10rem;
+  }
+
+  .banner-image {
+    padding: 0;
   }
 
   .banner-container img {
-    padding: 0;
     width: 100%;
-    height: 18rem;
+    height: auto;
   }
 
   .text-container {
@@ -166,17 +184,36 @@ h1 span {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 20rem;
+    height: auto;
+
   }
 
   .banner-text {
     width: 100%;
-    padding: 32px 16px;
     height: auto;
+
+  }
+
+  .banner-text h1 {
+    color: rgb(82,82,82);
+    margin-left: 16px;
+    margin-right: 16px;
   }
 
   .banner-text h2 {
     color: rgb(82,82,82);
+/*    padding-bottom: 24px;*/
+    margin-left: 16px;
+  }
+
+  .button {
+    display: flex;
+    background-color: grey;
+    margin-bottom: 32px;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 90%;
   }
 
 }
@@ -254,6 +291,7 @@ h1 span {
 .category-text a {
   margin-top: 8px;
   text-decoration: none;
+  color: blue;
 }
 
 /*Mobile Information Container*/
@@ -263,14 +301,17 @@ h1 span {
    }
 
    .info-boxes {
+     padding: 0;
      width: 100%;
+     margin: 16px 16px 32px 16px;
    }
 
   .category {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 32px 0;
+    border: none;
+    padding-bottom: 64px;
   }
 
   .category-2 {
@@ -278,22 +319,24 @@ h1 span {
     flex-direction: column;
     align-items: center;
     background-color: white;
-    padding: 32px 0;
+    border: none;
+
   }
 
-  .orientation-img, .category-img {
-    width: 100%;
+  .orientation-image, .category-image {
     overflow: hidden;
+    width: 100%;
   }
 
-  .orientation-img img, .category-img {
+  .orientation-image img, .category-image img {
     display: block;
     height: 15rem;
-    margin: -15% 0;
+    width: 100%;
   }
 
   .category-text {
-    width: 90%;
+    width: 100%;
+    margin-left: 16px;
   }
 
 }
@@ -305,19 +348,19 @@ h1 span {
 .learning-title {
   display: flex;
   justify-content: center;
-  margin-top: 32px;
+  padding-top: 32px;
+  margin-bottom: 16px;
 }
 
 .learning-content {
   display: flex;
   flex-wrap: wrap;
-  padding-right: 72px;
-  padding-left: 72px;
-  padding-bottom: 32px;
+  padding-right: 56px;
+  padding-left: 56px;
+  padding-bottom: 16px;
 }
 
 .learning-content-box {
-  padding-bottom: 32px;
   background-color: white;
   width: 30%;
   margin: 16px 16px;
@@ -353,12 +396,13 @@ h1 span {
 
 /*Mobile Start Learning Container*/
 @media only screen and (max-width: 760px) {
-  .learning-contianer {
+  .learning-container {
     background-color: white;
   }
 
   .learning-title h1{
     color: rgb(82,82,82);
+    margin-top: 32px 0px 16px 0px;
   }
 
   .learning-content {
@@ -367,6 +411,7 @@ h1 span {
     align-items: center;
     width: 100%;
     padding: 0;
+    margin-bottom: 32px;
   }
 
   .learning-content-box {
@@ -374,19 +419,21 @@ h1 span {
     background-color: lightgrey;
     margin: 8px 0;
     display: flex;
-    justify-content: center;
   }
 
-  .course-image img {
+  .course-img img {
     display: none;
   }
 
   .course-text h2 {
     margin: 0;
     color: rgb(82,82,82);
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 24px;
   }
 
-  .course-text h2, .course-text h3 {
+  .course-text h3, .course-text h4 {
     display: none;
   }
 
@@ -413,12 +460,12 @@ h1 span {
 }
 
 .main-video video {
-  margin-bottom: 24px;
   width: 100%;
 }
 
 .video-text h1 {
   margin-bottom: 8px;
+  margin-top: 24px;
 }
 
 .right-boxes {
@@ -467,15 +514,28 @@ h1 span {
 
 /*Mobile Thesis Container*/
 @media only screen and (max-width: 760px){
+  .thesis-title {
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
   .thesis-container {
     width: 100%;
     padding: 0;
   }
 
+  .video-container {
+    width: 100%;
+    margin: 0;
+  }
+
   .main-video video {
     width: 100%;
     height: auto;
-    padding-bottom: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .video-text {
@@ -490,8 +550,9 @@ h1 span {
     display: none;
   }
 
-  .copyright {
+  .copyright p {
     padding: 16px 0;
+    border-top: none;
   }
 
 }
