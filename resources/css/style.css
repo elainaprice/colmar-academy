@@ -80,6 +80,7 @@ h1 span {
     display: none;
   }
 
+/*Couldn't get the navigation bar to center*/
   header .mobile ul {
     display: flex;
     justify-content: space-around;
@@ -184,13 +185,11 @@ h1 span {
     align-items: center;
     width: 100%;
     height: auto;
-
   }
 
   .banner-text {
     width: 100%;
     height: auto;
-
   }
 
   .banner-text h1 {
